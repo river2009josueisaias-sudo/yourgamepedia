@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catálogo - GamePedia</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="img/gamepedia-logo.png" alt="Logo de GamePedia" class="logo" />
+    </div>
+    <p>Explora nuestro catálogo de juegos</p>
+  </header>
+
+  <main>
+    <a href="index.html" class="volver">← Volver a Inicio</a>
+
+    <h2>🎮 Categorías de Juegos</h2>
+
+    <!-- Acción -->
+    <section class="categoria">
+      <h3>⚔️ Acción</h3>
+      <div class="juegos">
+        <div class="juego-card" onclick="irADetalle('God of War')">
+          <img src="img/godofwar.jpg" alt="God of War" />
+          <p>God of War</p>
+        </div>
+        <div class="juego-card" onclick="irADetalle('Doom')">
+          <img src="img/doom.jpg" alt="Doom" />
+          <p>Doom</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Aventura -->
+    <section class="categoria">
+      <h3>🧙 Aventura</h3>
+      <div class="juegos">
+        <div class="juego-card" onclick="irADetalle('Minecraft')">
+          <img src="img/minecraft.jpg" alt="Minecraft" />
+          <p>Minecraft</p>
+        </div>
+        <div class="juego-card" onclick="irADetalle('The Legend of Zelda')">
+          <img src="img/zelda.jpg" alt="Zelda" />
+          <p>Zelda</p>
+        </div>
+        <div class="juego-card" onclick="irADetalle('Roblox')">
+          <img src="img/roblox.jpg" alt="Roblox" />
+          <p>Roblox</p>
+        </div>
+       </div>
+     </section>
+
+    <!-- Estrategia -->
+    <section class="categoria">
+      <h3>♟️ Estrategia</h3>
+      <div class="juegos">
+        <div class="juego-card" onclick="irADetalle('StarCraft')">
+          <img src="img/starcraft.jpg" alt="StarCraft" />
+          <p>StarCraft</p>
+        </div>
+        <div class="juego-card" onclick="irADetalle('Civilization VI')">
+          <img src="img/civ6.jpg" alt="Civilization VI" />
+          <p>Civilization VI</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RPG -->
+    <section class="categoria">
+      <h3>🐉 RPG</h3>
+      <div class="juegos">
+        <div class="juego-card" onclick="irADetalle('The Witcher 3')">
+          <img src="img/witcher.jpg" alt="The Witcher 3" />
+          <p>The Witcher 3</p>
+        </div>
+        <div class="juego-card" onclick="irADetalle('Elden Ring')">
+          <img src="img/eldenring.jpg" alt="Elden Ring" />
+          <p>Elden Ring</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 GamePedia - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

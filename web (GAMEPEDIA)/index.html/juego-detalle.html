@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Detalles del Juego - GamePedia</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="img/gamepedia-logo.png" alt="Logo de GamePedia" class="logo" />
+    </div>
+    <p>Información del juego</p>
+  </header>
+
+  <main>
+    <a href="index.html" class="volver">← Volver a Inicio</a>
+
+    <article class="detalle-juego">
+      <img id="portada" src="img/minecraft.jpg" alt="Juego" />
+      <h2 id="titulo">Cargando...</h2>
+      <p><strong>Desarrollador:</strong> <span id="desarrollador">-</span></p>
+      <p><strong>Género:</strong> <span id="genero">-</span></p>
+      <p><strong>Año:</strong> <span id="anio">-</span></p>
+      <p id="descripcion">Cargando descripción...</p>
+    </article>
+
+    <a href="juego-video.html" class="btn">Ver video y descarga →</a>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 GamePedia - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>
+    window.onload = cargarDetalle;
+  </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Video y Descarga - GamePedia</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="img/gamepedia-logo.png" alt="Logo de GamePedia" class="logo" />
+    </div>
+    <p>Mira cómo se juega</p>
+  </header>
+
+  <main>
+    <a href="index.html" class="volver">← Volver a Inicio</a>
+
+    <h2 id="titulo-video">Cargando video...</h2>
+    
+    <div class="video-container">
+      <iframe 
+        id="video-frame" 
+        width="560" 
+        height="315" 
+        frameborder="0" 
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <div class="descarga">
+      <h3>📥 Descargar el juego</h3>
+      <a id="enlace-descarga" href="#" target="_blank" class="btn">Ir al sitio oficial</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 GamePedia - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>
+    window.onload = cargarVideoYDescarga;
+  </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GamePedia</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="img/gamepedia-logo.png" alt="Logo de GamePedia" class="logo" />
+    </div>
+    <p>¡Tu enciclopedia de videojuegos favorita!</p>
+  </header>
+
+  <main>
+    <!-- Búsqueda -->
+    <section class="buscador">
+      <h2>¿Qué juego buscas?</h2>
+      <input type="text" id="buscador" placeholder="Escribe el nombre del juego..." />
+      <button onclick="buscarJuego()">Buscar</button>
+    </section>
+
+    <!-- Catálogo -->
+    <section class="enlaces">
+      <a href="catalogo.html" class="btn">Ver Catálogo</a>
+      <a href="galeria.html" class="btn">Mi Galería</a>
+    </section>
+
+    <!-- Galería de juegos vistos -->
+    <section class="galeria-home">
+      <h2>🎮 Juegos que ya viste</h2>
+      <div id="galeria-home" class="mini-galeria">
+        <!-- Se llena con JavaScript -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 GamePedia - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>
+    // Cargar galería en la página principal
+    window.onload = cargarGaleriaHome;
+  </script>
+</body>
+</html>
